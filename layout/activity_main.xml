@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="10"
+    android:id="@+id/layout"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="3">
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="0"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+     />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:onClick="actionButton"
+        android:text="Increment"
+        android:textSize="20dp"
+        android:textColor="#df6602"/>
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:onClick="actionButton"
+        android:text="Decrement"
+        android:textSize="20dp"
+        android:textColor="#1525de"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/cbackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Background"
+            android:textSize="35sp"
+            android:textColor="#2e2929"
+            android:fontFamily="cursive"
+            android:textAllCaps="false"
+            android:onClick="changeBackground"/>
+    </LinearLayout>
+
+</LinearLayout>
